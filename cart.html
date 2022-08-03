@@ -218,9 +218,47 @@
         <!-- sidebar ended -->
 
         <!-- cart section -->
-        
-        <div class="main-section flex-1 p-6 bg-white"></div>
 
+        <div class="main-section flex-1 p-6 bg-white">
+          <h1 class="text-gray-400 text-3xl font-bold mb-6">Shopping Cart</h1>
+          <div class="font-bold text-gray-400 table-titles flex">
+            <h2 class="flex-grow">Product</h2>
+            <h2 class="w-48">Count</h2>
+            <h2 class="w-48">Total Cost</h2>
+          </div>
+
+          <!-- cart items -->
+          <div class="cart-items mt-5">
+            <div class="cart-item flex items-center pb-4">
+              <div class="cart-item-image w-40 h-30 bg-white p-4 rounded-lg">
+                <img class="h-full w-full object-contain" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/refurb-macbook-air-space-gray-m1-202010?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1634145627000" />
+              </div>
+              <div class="cart-item-details">
+                <div class="cart-item-title font-bold text-sm text-gray-600">
+                  Apple MacBook Pro 13,3
+                </div>
+                <div class="cart-item-brand text-sm text-gray-400">
+                  Apple
+                </div>
+              </div>
+              <div class="cart-item-counter w-48 flex items-center">
+                <div class="chevron-left text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center cursor-pointer hover:bg-gray-200 mr-2">
+                  <i class="fas fa-chevron-left fa-xs"></i>
+                </div>
+                <h4 class="text-gray-400">x1</h4>
+                <div class="chevron-right text-gray-400 bg-gray-100 rounded h-6 w-6 flex justify-center items-center cursor-pointer hover:bg-gray-200 ml-2">
+                  <i class="fas fa-chevron-right fa-xs"></i>
+                </div>
+              </div>
+              <div class="cart-item-total-cost w-48 font-bold text-gray-400">
+                $1,149.00
+              </div>
+              <div class="cart-item-delete w-10 font-bold text-gray-300 cursor-pointer hover:text-gray-500">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
