@@ -1,4 +1,6 @@
 // Read (read data) section on firebase documentation
+// querySnapshot -> only updates the number after the refresh hence onSnapshot
+// .get().then((querySnapshot)) was present earlier
 
 function getCartItems() {
     db.collection("cart-items").onSnapshot((snapshot) => {
